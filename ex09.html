@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개체조작매서드</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            console.log($('body').html());
+            console.log($('body').text());
+            $('#box02').html('<input type="text" value="0">');
+            $('#box02').text('<input type="text" value="0">');
+
+            console.log($('#box').attr('id'));
+            console.log($('#box').attr('style'));
+            $('#box').attr('id','box01');
+            $('#box02').attr('style','background-Color:red');
+            $('.box').removeAttr('style');
+            $('.box').removeAttr('id');
+            $('.box').removeAttr('class');
+        })
+    </script>
+
+</head>
+<body>
+    <h1>개체 속성 매서드</h1>
+    <div id="box" class="box" style="color:red">box</div>
+    <div id="box02" class="box02"></div>
+
+</body>
+</html>

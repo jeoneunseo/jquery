@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/jquery-3.6.0.js"></script>
 </head>
 <body>
-    <input type="text" id="input01" class="txt">
-    <input type="text" id="input02" class="txt">
-
-
+    <input type="text" id="input01" class="txt-box">
+    <div>
+        <input type="text" id="input02" class="txt-box">
+    </div>
     <script>
         $(function(){
             console.log($('#input01').is(':visible'));
@@ -20,11 +21,10 @@
                     height:'100px',
                 })
             }
-            if($('#unput01').parent().is('body')){
-                $('#input01').css({
-                    color:'red',
-                })
-            }
+            console.log($('input').parent().is('body'))
+            
+            let inBox = $('input');
+            inBox.style.color='green';
         })
     </script>
 </body>
