@@ -1,0 +1,7 @@
+jQuery 선택자
+ css선택자 사용가능하다(단 가상요소(::before, ::after, ::placeholder...) 사용불가)
+ 부모, 조상, 형제,속성
+ 배열객체(인덱스)
+
+요소.attr(),요소.removeAttr(),요소.addClass,요소.removeClass,요소.toggleClass,
+요소.hasClass
